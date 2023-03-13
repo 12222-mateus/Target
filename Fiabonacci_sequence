@@ -1,0 +1,11 @@
+numero  = (int(input("Digite um número para ser calculado se faz parte da sequênica de fiabonacci:  ")))
+print(numero)
+lista_fiabonacci = [0 , 1   ]
+n = 2
+while(n<=numero):
+    lista_fiabonacci.append(lista_fiabonacci[n-2] + lista_fiabonacci[n-1])
+    n = n +1
+if(numero in lista_fiabonacci):
+    print("O seu número pertence a sequência de fiabonacci")
+else:
+    print("O seu número não pertence a sequência de fiabonacci")
